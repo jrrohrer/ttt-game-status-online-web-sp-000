@@ -18,12 +18,38 @@ WIN_COMBINATIONS = [
 # Define #won? method
 def won?(board)
   WIN_COMBINATIONS.each do |win_combination|
-    win_combination.each do |position|
-      if position[0] == "X" && position[1] == "X" && position[2] == "X"
-        return win_combination
-      else
-        false
-      end
+    win_index_1 = win_combination[0]
+    win_index_2 = win_combination[1]
+    win_index_3 = win_combination[2]
+
+    position_1 = board[win_index_1]
+    position_2 = board[win_index_2]
+    position_3 = board[win_index_3]
+
+    if position_1 == position_2 && position_2 == position_3 && position_taken?(board, win_index_1)
+      return win_combination
+    else
+      return false
     end
   end
+end
+
+# Define #full? Method
+def full?(board)
+
+end
+
+# Define #draw? Method
+def draw?(board)
+
+end
+
+# Define #over? Method
+def over?(board)
+
+end
+
+# Define #winner Method
+def winner(board)
+
 end
