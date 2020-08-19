@@ -32,6 +32,7 @@ def won?(board)
       false
     end
   end
+  return false
 end
 
 # Define #full? Method
