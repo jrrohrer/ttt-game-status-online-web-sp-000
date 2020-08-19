@@ -48,6 +48,7 @@ def draw?(board)
     return false
   end
 end
+end
 
 
 # Define #over? Method
