@@ -57,6 +57,7 @@ def over?(board)
     return true
   else
     return false
+  end
 end
 
 # Define #winner Method
