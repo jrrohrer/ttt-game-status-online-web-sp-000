@@ -53,7 +53,10 @@ end
 
 # Define #over? Method
 def over?(board)
-
+  if won?(board) || draw?(board) || full?(board)
+    return true
+  else 
+    return false
 end
 
 # Define #winner Method
