@@ -35,7 +35,7 @@ end
 
 # Define #full? Method
 def full?(board)
-
+  board.all? {|i| i == "X" || i == "O"}
 end
 
 # Define #draw? Method
