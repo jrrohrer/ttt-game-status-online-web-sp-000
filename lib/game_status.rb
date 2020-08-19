@@ -26,10 +26,15 @@ def won?(board)
     position_2 = board[win_index_2]
     position_3 = board[win_index_3]
 
+    puts position_1
+  puts position_2
+  puts position_3
+  puts position_taken?(board, win_index_1)
+
     if position_1 == position_2 && position_2 == position_3 && position_taken?(board, win_index_1)
       return win_combination
     else
-      return false
+      false
     end
   end
 end
